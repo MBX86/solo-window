@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solo Leveling Stat Window</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="window">
+    <h1>===========================<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STAT WINDOW<br>
+        ===========================</h1>
+    <div class="stat"><strong>Level</strong>: <input type="number" id="level" value="0"></div>
+    <div class="stat"><strong>Rank</strong>: <input type="text" id="rank" value="E"></div>
+    <div class="stat"><strong>Health</strong>: <input type="text" id="health" value="0 / 1000"></div>
+    <div class="stat"><strong>Strength</strong>: <input type="number" id="strength" value="0"></div>
+    <div class="stat"><strong>Stamina</strong>: <input type="number" id="stamina" value="0"></div>
+    <div class="stat"><strong>Speed</strong>: <input type="number" id="speed" value="0"></div>
+    <div class="stat"><strong>Agility</strong>: <input type="number" id="agility" value="0"></div>
+    <div class="stat"><strong>Intelligence</strong>: <input type="number" id="intelligence" value="0"></div>
+    <div class="stat"><strong>Sense</strong>: <input type="number" id="sense" value="0"></div>
+    <div class="buttons">
+      <button onclick="autoRank()">تقييم تلقائي</button>
+      <button onclick="saveStats()">حفظ</button>
+    </div>
+    <textarea id="notes" placeholder="ملاحظات..."></textarea>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
